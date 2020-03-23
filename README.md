@@ -5,7 +5,7 @@
 ## Navigate to:
 
 ```
-https://github.com/...
+https://felipepulgara.github.io/reading-speed-app/
 ```
 
 #### Contact
