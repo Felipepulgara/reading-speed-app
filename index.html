@@ -12,18 +12,88 @@
     />
   </head>
   <body>
-    <!-- As a link -->
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Reading Speed App</a>
-    </nav>
-    <form>
+    <div class="container">
+      <!-- Content here -->
+      <!-- As a link -->
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><h5>Reading Speed App</h5></a>
+      </nav>
+      <br />
       <div class="form-group">
         <label for="txtRead">Ingresa texto a leer:</label>
         <textarea class="form-control" rows="15" id="txtRead"></textarea>
       </div>
 
-      <button type="submit" class="btn btn-primary">Comenzar a leer!</button>
-    </form>
+      <div class="card">
+        <div class="card-body">
+          <div class="d-inline">
+            <h5 class="d-inline">
+              Palabras identificadas:
+              <span class="font-weight-bold">342 palabras</span>
+            </h5>
+            <div class="float-right">
+              <button type="submit" class="btn btn-warning">
+                Rellenar texto aleatorio
+              </button>
+              <button type="submit" class="btn btn-warning">
+                Quitar saltos
+              </button>
+              <button type="submit" class="btn btn-warning">Limpiar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="radio d-inline">
+            <label
+              ><input type="radio" name="optradio" checked /> Usar palabras
+              identificasas <span class="font-weight-bold">(342)</span></label
+            >
+          </div>
+          <p class="d-inline">-</p>
+          <div class="radio d-inline">
+            <label
+              ><input type="radio" name="optradio"/> Acortar palabras a
+              <input
+                type="number"
+                class="form-control d-inline"
+                style="width: 80px;"
+            /></label>
+          </div>
+
+          <p class="d-inline h3 col-md-3 ml-md-5">Tiempo: 00:00</p>
+
+          <div class="float-right">
+            <button type="submit" class="btn btn-success">
+              Comenzar test ahora!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          Acá los resultados
+        </div>
+      </div>
+    </div>
+    <!-- Custom Scripts -->
     <script src="./scripts/index.js"></script>
+    <!-- bootstrap Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
