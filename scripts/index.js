@@ -35,6 +35,12 @@ const removeLineBreaks = text => {
   return text.split('\n').join(' ');
 };
 
+// Events listener
+formUI.addEventListener('submit', e => {
+  e.preventDefault();
+  console.log('Hola');
+});
+
 let wordsForMinute_ = wordsForMinute(300, 120);
 let wordsInText_ = wordsInText(otherExampleTest);
 let removeLineBreaks_ = removeLineBreaks(exampleText);
