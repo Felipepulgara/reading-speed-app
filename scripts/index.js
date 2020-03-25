@@ -6,6 +6,13 @@ Fuente: soychile.cl - https://www.soychile.cl/Santiago/Politica/2020/03/22/64444
 const otherExampleTest =
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem eum, ipsum assumenda officia voluptas expedita natus inventore! Repellat omnis temporibus nam, sapiente molestiae libero, deleniti quibusdam officia doloremque sit veritatis a eos, et dolorem soluta ad consectetur quos velit odit ratione. Laudantium quod ex nobis fugit, soluta molestias hic. Porro aspernatur ratione enim sunt ea doloribus ipsam magni ducimus molestiae delectus earum, quos quam fugiat suscipit necessitatibus officia a eveniet reprehenderit assumenda laborum. Sapiente illum dolorem eligendi omnis veritatis? Vel mollitia aut deserunt quia aspernatur numquam ad maxime neque, suscipit optio, sapiente debitis nulla aliquid architecto cum molestias officia ipsam temporibus laboriosam quis? Cum ullam vitae dolorem esse omnis voluptatibus asperiores, laudantium mollitia quisquam. Ullam asperiores odit debitis nisi quasi, ipsam voluptatum illum iusto odio, eum itaque maiores adipisci, ducimus veniam in provident.';
 
+///////////////
+
+// Global variables
+const formUI = document.querySelector('#mainForm');
+const resultsUI = document.getElementById('results');
+
+// Functions
 const wordsForMinute = (words, seconds) => {
   try {
     return Math.round((words / seconds) * 60);

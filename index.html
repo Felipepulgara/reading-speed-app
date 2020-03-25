@@ -21,62 +21,70 @@
         >
       </nav>
       <br />
-      <div class="form-group">
-        <label for="txtRead">Ingresa texto a leer:</label>
-        <textarea class="form-control" rows="15" id="txtRead"></textarea>
-      </div>
+      <form id="mainForm">
+        <div class="form-group">
+          <label for="txtRead">Ingresa texto a leer:</label>
+          <textarea class="form-control" rows="15" id="txtRead"></textarea>
+        </div>
 
-      <div class="card">
-        <div class="card-body">
-          <div class="d-inline">
-            <h5 class="d-inline">
-              Palabras identificadas:
-              <span class="font-weight-bold">342</span>
-            </h5>
-            <div class="float-right">
-              <button type="submit" class="btn btn-warning">
-                Quitar saltos
-              </button>
-              <button type="submit" class="btn btn-warning">Limpiar</button>
+        <div class="card">
+          <div class="card-body">
+            <div class="d-inline">
+              <h5 class="d-inline">
+                Palabras identificadas:
+                <span class="font-weight-bold">342</span>
+              </h5>
+              <div class="float-right">
+                <button type="submit" class="btn btn-warning">
+                  Quitar saltos
+                </button>
+                <button type="submit" class="btn btn-warning">
+                  Random
+                </button>
+                <button type="submit" class="btn btn-warning">Limpiar</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <div class="radio d-inline">
-            <label
-              ><input type="radio" name="optradio" checked /> Usar palabras
-              identificasas <span class="font-weight-bold">(342)</span></label
-            >
-          </div>
-          <p class="d-inline">-</p>
-          <div class="radio d-inline">
-            <label
-              ><input type="radio" name="optradio"/> Acortar palabras a
-              <input
-                type="number"
-                class="form-control d-inline"
-                style="width: 80px;"
-            /></label>
-          </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="radio d-inline">
+              <label
+                ><input type="radio" name="optradio" checked /> Usar palabras
+                identificasas <span class="font-weight-bold">(342)</span></label
+              >
+            </div>
+            <p class="d-inline">-</p>
+            <div class="radio d-inline">
+              <label
+                ><input type="radio" name="optradio"/> Acortar palabras a
+                <input
+                  type="number"
+                  class="form-control d-inline"
+                  style="width: 80px;"
+              /></label>
+            </div>
 
-          <p class="d-inline h3 col-md-3 ml-md-5">Tiempo: 00:00</p>
+            <p class="d-inline h3 col-md-3 ml-md-5">Tiempo: 00:00</p>
 
-          <div class="float-right">
-            <button type="submit" class="btn btn-success">
-              Comenzar test ahora!
-            </button>
+            <div class="float-right">
+              <button type="submit" class="btn btn-success">
+                Comenzar test ahora!
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h4>Resultado:</h4>
-          <h5>
-            Palabras leídas por minuto:
-            <span class="font-weight-bold h3">162</span>
-          </h5>
+      </form>
+
+      <div id="results">
+        <div class="card">
+          <div class="card-body">
+            <h4>Resultado:</h4>
+            <h5>
+              Palabras leídas por minuto:
+              <span class="font-weight-bold h3">162</span>
+            </h5>
+          </div>
         </div>
       </div>
     </div>
